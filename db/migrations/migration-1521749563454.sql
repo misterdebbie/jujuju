@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS moods (
+  id BIGSERIAL PRIMARY KEY,
+  vibe VARCHAR(255),
+  description TEXT
+);

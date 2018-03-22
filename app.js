@@ -2,12 +2,20 @@ const express = require('express');
 //import express module
 const moodRouter = require('./routes/moods');
 //define routes for mood collection
+const path = require('path');
 
 const app = express();
 //access to routing HTTP requests
 //configure middleware
 //render HTML views
 const PORT = process.env.PORT || 3000;
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.get('/', (req,res) => {
   res.send('yo');
