@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>USDA DATA STUFFSSSS</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="../style/mood.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<h1>moods</h1>
+
+<% moods.forEach(mood => { %>
+  <div class='mood'>
+    <h3>
+     <a href='<%= `/mood/${mood.id}` %>'>
+      <%= mood.vibe %>
+     </a>
+   </h3>
+   <p><%= mood.description %></p>
+ </div>
+<% }) %>
+</body>
+</html>
