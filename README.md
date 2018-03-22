@@ -1,4 +1,4 @@
-tulip::rabbit::tulip:
+:tulip::rabbit::tulip:
 # Trend Newsletter/Look Book Sample App
 
 #### by Debbie Chong
